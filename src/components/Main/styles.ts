@@ -5,17 +5,19 @@ export const Wrapper = styled.main`
   color: #056839;
   width: 100%;
   height: 100%;
-  padding: 3rem;
+  padding: 8rem 4rem 4rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 `
 
 export const Logo = styled.img`
   width: 12rem;
   margin-bottom: 2rem;
+  margin-top: 10rem;
 `
 
 export const Title = styled.h1`
