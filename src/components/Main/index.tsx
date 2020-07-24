@@ -2,12 +2,12 @@ import * as S from './styles'
 
 const Main = ({
   title = 'The Druid: Chronicles of the land of the Angles',
-  description = 'Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of being a strange in the United Kingdom.',
+  description = 'Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of the United Kingdom.',
   footer = 'Coming soon!'
 }) => (
   <S.Wrapper>
     <S.Logo
-      src="/img/oak-tree-logo-120px.png"
+      src="/img/oak-tree-logo-500px.png"
       alt="Oak tree icon, logo of The Druid blog. All trees are sacred for the druid, and particularly the oak tree."
     />
     <S.Title>{title}</S.Title>
