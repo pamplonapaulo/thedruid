@@ -6,13 +6,13 @@ const Main = ({
 }) => (
   <S.Wrapper>
     <S.Logo
-      src="/img/oak-tree-logo.png"
+      src="/img/oak-tree-logo-120px.png"
       alt="Oak tree icon, logo of The Druid blog. All trees are sacred for the druid, and particularly the oak tree."
     />
     <S.Title>{title}</S.Title>
     <S.Description>{description}</S.Description>
     <S.Illustration
-      src="/img/standing-stone-circle.jpg"
+      src="/img/standing-stone-circle-250px.jpg"
       alt="Um desenvolvedor de frente para uma tela com código."
     />
   </S.Wrapper>
