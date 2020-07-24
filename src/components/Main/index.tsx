@@ -12,7 +12,7 @@ const Main = ({
     <S.Title>{title}</S.Title>
     <S.Description>{description}</S.Description>
     <S.Illustration
-      src="/img/standing-stone-circle-250px.jpg"
+      src="/img/standing-stone-circle-250px.png"
       alt="Um desenvolvedor de frente para uma tela com código."
     />
   </S.Wrapper>
