@@ -2,7 +2,8 @@ import * as S from './styles'
 
 const Main = ({
   title = 'The Druid: Chronicles of the land of the Angles',
-  description = 'Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of being a strange in the United Kingdom.'
+  description = 'Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of being a strange in the United Kingdom.',
+  footer = 'Coming soon!'
 }) => (
   <S.Wrapper>
     <S.Logo
@@ -15,6 +16,7 @@ const Main = ({
       src="/img/standing-stone-circle-250px.png"
       alt="Ancient standing stone circle."
     />
+    <S.Description>{footer}</S.Description>
   </S.Wrapper>
 )
 
