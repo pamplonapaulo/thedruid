@@ -8,6 +8,11 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>The Druid - Chronicles of the land of the Angles</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          key="viewport"
+        />
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
