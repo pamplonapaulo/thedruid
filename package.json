@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:pwa": "NOVE_ENV=production yarn build",
+    "build:pwa": "NODE_ENV=production yarn build",
     "start": "next start",
+    "export": "next export",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
     "test:watch": "yarn test --watch",
