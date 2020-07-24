@@ -15,8 +15,13 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
+  @font-face {
+    font-family: 'DreamWood';
+    src: url('dreamwood.ttf');
+  }
+
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: DreamWood, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `
 
