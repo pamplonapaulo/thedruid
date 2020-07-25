@@ -1,4 +1,5 @@
 import * as S from './styles'
+import Footer from '../Footer'
 
 const Main = ({
   title = 'The Druid: Chronicles of the land of the Angles',
@@ -17,6 +18,7 @@ const Main = ({
       alt="Ancient standing stone circle."
     />
     <S.Description>{footer}</S.Description>
+    <Footer />
   </S.Wrapper>
 )
 
