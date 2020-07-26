@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
+import { MenuProvider } from '../contexts'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,9 +21,15 @@ function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of being a strange in the United Kingdom."
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <MenuProvider>
+        <Component {...pageProps} />
+      </MenuProvider>
     </>
   )
 }
