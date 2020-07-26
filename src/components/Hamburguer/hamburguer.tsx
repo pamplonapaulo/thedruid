@@ -12,7 +12,7 @@ const Hamburguer = () => {
   return (
     <S.Wrapper>
       <S.Btn onClick={() => handleMenu()}>
-        <S.Span className={menu && 'active'}></S.Span>
+        <S.Span className={menu ? 'active' : ''}></S.Span>
       </S.Btn>
     </S.Wrapper>
   )
