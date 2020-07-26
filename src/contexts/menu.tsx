@@ -1,30 +1,35 @@
-import React, { createContext, useState, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
-const MenuContext = createContext()
+export function createCtx<ContextType>() {
+  const ctx = React.createContext<ContextType | undefined>(undefined)
+  function useCtx() {
+    const c = React.useContext(ctx)
+    if (!c) throw new Error('useCtx must be inside a Provider with a value')
+    return c
+  }
+  return [useCtx, ctx.Provider] as const
+}
+
+type MenuContextType = {
+  menu: boolean
+  setMenu: (value: boolean) => void
+}
+
+const [useMenu, CtxProvider] = createCtx<MenuContextType>()
 
 type Props = {
-  children: ReactNode
+  children: React.ReactNode
 }
 
-function MenuProvider({ children }: Props) {
-  const [menuStatus, setMenuStatus] = useState(false)
+const MenuProvider = ({ children }: Props) => {
+  const [menu, setMenu] = React.useState(false)
 
-  function toggleMenu() {
-    console.log('menuStatus', menuStatus)
+  React.useEffect(() => {
+    const currentMenu = false
+    setMenu(currentMenu)
+  }, [])
 
-    setMenuStatus(!menuStatus)
-  }
-
-  return (
-    <MenuContext.Provider
-      value={{
-        menuStatus,
-        toggleMenu
-      }}
-    >
-      {children}
-    </MenuContext.Provider>
-  )
+  return <CtxProvider value={{ menu, setMenu }}>{children}</CtxProvider>
 }
 
-export { MenuProvider, MenuContext }
+export { MenuProvider, useMenu }

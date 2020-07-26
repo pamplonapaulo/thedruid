@@ -1,20 +1,18 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import * as S from './styles'
-import { MenuContext } from 'contexts'
+import { useMenu } from 'contexts'
 
 const Hamburguer = () => {
-  const { toggleMenu } = useContext(MenuContext)
-  const [menuState, setMenuState] = useState(false)
+  const { menu, setMenu } = useMenu()
 
   const handleMenu = () => {
-    toggleMenu()
-    setMenuState(!menuState)
+    setMenu(!menu)
   }
 
   return (
     <S.Wrapper>
       <S.Btn onClick={() => handleMenu()}>
-        <S.Span className={menuState && 'active'}></S.Span>
+        <S.Span className={menu && 'active'}></S.Span>
       </S.Btn>
     </S.Wrapper>
   )
