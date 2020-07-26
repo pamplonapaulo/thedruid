@@ -1,9 +1,11 @@
 import * as S from './styles'
-import Instagram from '../Instagram'
+import Instagram from 'components/Instagram'
 
 const Footer = ({ address = 'thedruid.uk' }) => (
   <S.Wrapper>
     <S.Instagram>
+      <S.P>{'Follow The Druid'}</S.P>
+
       <S.A
         target="_blank"
         rel="noreferrer"
@@ -15,7 +17,7 @@ const Footer = ({ address = 'thedruid.uk' }) => (
     </S.Instagram>
 
     <S.Copy>
-      <S.PCopy>{'© All rights reserved'}</S.PCopy>
+      <S.PCopy>{'© 2020 All rights reserved'}</S.PCopy>
     </S.Copy>
   </S.Wrapper>
 )

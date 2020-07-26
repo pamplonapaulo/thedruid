@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+
   * {
     margin: 0;
     padding: 0;
@@ -13,15 +14,17 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #__next {
     height: 100%;
-  }
 
-  @font-face {
-    font-family: 'DreamWood';
-    src: url('dreamwood.ttf');
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &&::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   body {
-    font-family: DreamWood, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'PT Serif', serif;
   }
 `
 
