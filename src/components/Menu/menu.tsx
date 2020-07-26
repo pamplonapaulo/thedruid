@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import * as S from './styles'
 import { useMenu } from 'contexts'
 
@@ -6,7 +6,7 @@ const Menu = ({ pages = ['Home', 'About', 'Chronicles', 'Contact'] }) => {
   const { menu } = useMenu()
 
   return (
-    <S.SideBar className={menu && 'active'}>
+    <S.SideBar className={menu ? 'active' : ''}>
       <S.List>
         {pages.map((page) => (
           <S.Item key={page}>
