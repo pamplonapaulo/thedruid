@@ -11,7 +11,7 @@ const Home = () => (
       src="/img/standing-stone-circle-250px.png"
       alt="Ancient standing stone circle."
     />
-    <Text>Coming soon!</Text>
+    <Text>{`It's coming...`}</Text>
   </>
 )
 
