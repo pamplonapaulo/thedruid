@@ -9,6 +9,11 @@ export const TopBar = styled.header`
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+
+  @media only screen and (min-width: 1024px) {
+    position: relative;
+    padding: 0 5vw;
+  }
 `
 
 export const Logo = styled.div`
@@ -22,6 +27,10 @@ export const Logo = styled.div`
 export const Icon = styled.img`
   height: 50px;
   margin: 0 10px;
+
+  @media only screen and (min-width: 1024px) {
+    margin-left: 0;
+  }
 `
 
 export const Naming = styled.div`

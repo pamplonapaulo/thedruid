@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   height: 100%;
   width: 60px;
   display: flex;
+
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
 `
 
 export const Btn = styled.div`
