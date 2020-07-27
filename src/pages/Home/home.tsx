@@ -44,6 +44,7 @@ const Text = styled.h2`
   padding: 0 50px;
 
   &:last-child {
+    margin: 130px 0;
     text-align: center;
   }
 
@@ -54,7 +55,7 @@ const Text = styled.h2`
 
     &:last-child {
       font-size: 4rem;
-      margin-top: 10%;
+      margin: 10% 0 0;
       transform: translateY(-100%);
     }
   }
