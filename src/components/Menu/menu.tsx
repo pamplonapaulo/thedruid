@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './styles'
 import { useMenu } from 'contexts'
 
-const Menu = ({ pages = ['Home', 'About', 'Chronicles', 'Contact'] }) => {
+const Menu = ({ pages = ['his origins', 'manuscripts', 'summon him'] }) => {
   const { menu } = useMenu()
 
   return (

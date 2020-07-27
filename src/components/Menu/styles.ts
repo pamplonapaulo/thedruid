@@ -31,7 +31,7 @@ export const List = styled.ul`
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 
   @media only screen and (min-width: 1024px) {
@@ -70,4 +70,5 @@ export const A = styled.a`
 export const H1 = styled.h1`
   color: #056839;
   text-align: center;
+  white-space: nowrap;
 `

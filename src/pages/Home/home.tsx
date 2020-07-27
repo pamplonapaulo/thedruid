@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 const Home = () => (
   <>
-    <Description>Chronicles from the land of the Angles</Description>
+    <Description>Tales from the land of the Angles</Description>
     <Text>
-      Learnings and records of a strange discovering the wonders of the United
-      Kingdom.
+      Findings of power and healing spells from a wild ancient spirit of the
+      nature in a new old Kingdom.
     </Text>
     <Illustration
       src="/img/standing-stone-circle-250px.png"
       alt="Ancient standing stone circle."
     />
-    <Text>Coming soon!</Text>
+    <Text>{`It's coming...`}</Text>
   </>
 )
 
@@ -44,6 +44,7 @@ const Text = styled.h2`
   padding: 0 50px;
 
   &:last-child {
+    margin: 130px 0;
     text-align: center;
   }
 
@@ -54,7 +55,7 @@ const Text = styled.h2`
 
     &:last-child {
       font-size: 4rem;
-      margin-top: 10%;
+      margin: 10% 0 0;
       transform: translateY(-100%);
     }
   }
