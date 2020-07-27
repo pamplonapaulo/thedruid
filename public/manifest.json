@@ -1,5 +1,5 @@
 {
-  "name": "The Druid: Chronicles of the land of the Angles",
+  "name": "The Druid: Chronicles from the land of the Angles",
   "short_name": "The Druid",
   "icons": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#ccc",
-  "description": "Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of the United Kingdom.",
+  "description": "Learnings and records of a strange discovering the wonders of the United Kingdom.",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#ccc"

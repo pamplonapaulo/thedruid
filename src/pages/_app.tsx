@@ -8,7 +8,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>The Druid - Chronicles of the land of the Angles</title>
+        <title>The Druid - Chronicles from the land of the Angles</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -19,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
-          content="Thoughts, learnings, and records from a cosmopolitan shaman discovering the wonders and dramas of being a strange in the United Kingdom."
+          content="Learnings and records of a strange discovering the wonders of the United Kingdom."
         />
         <link
           href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
