@@ -70,4 +70,5 @@ export const A = styled.a`
 export const H1 = styled.h1`
   color: #056839;
   text-align: center;
+  white-space: nowrap;
 `
