@@ -4,7 +4,7 @@ import Instagram from 'components/Instagram'
 const Footer = ({ address = 'thedruid.uk' }) => (
   <S.Wrapper>
     <S.Instagram>
-      <S.P>{'Follow The Druid'}</S.P>
+      <S.P>{'Follow the magic'}</S.P>
 
       <S.A
         target="_blank"
